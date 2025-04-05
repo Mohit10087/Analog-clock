@@ -1,89 +1,106 @@
-body{
-			margin: 0px;
-			background: #222;
-		}
-h1{
-  color:#fff;
+/* Remove default margin and set dark background */
+body {
+  margin: 0px;
+  background: #222;
 }
-.container{
-      position: absolute;
-      top:50%;
-			left: 50%;
-			transform:translate(-50%,-50%);
+
+/* Style the heading */
+h1 {
+  color: #fff;
 }
-		.clock{
-			margin: 200px 500px;
-			width: 250px;
-			height: 250px;
-			border:2px solid rgba(255,255,255,0.5) ;
-			position: relative;
-			transform: rotate(-90deg);
-			border-radius: 100%;
-		}
-		.time{
-			color: #fff;
-			position: absolute;
-			transform: rotate(90deg);
-			/*now use margin to the time */
-		}
-		.line{
-			position: absolute;
-			width: 100px;
-			height: 5px;
-			background: red;
-			top: calc(50% - 2.5px);
-			left: calc(50% - 0px);
-			transform-origin: 0% 50%;
-			transform: rotate(90deg);
-		}
-		.mid{
-			position: absolute;
-			width: 20px;
-			height: 20px;
-			background: #fff;
-			border-radius: 100%;
-			top:50%;
-			left: 50%;
-			transform:translate(-50%,-50%);
-			z-index: 10;
-		}
 
-		#seconds{
-			background: green;
-			transform:rotate(180deg);
-		}
-		#minutes{
-			background: blue;
-			transform:rotate(270deg);
-		}
-		#hours{
-			background: red;
-			transform:rotate(0deg);
-			/*time 12 start*/
-		}
+/* Center the clock container in the viewport */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-		
+/* Clock face styles */
+.clock {
+  margin: 200px 500px; /* Optional spacing from top/side */
+  width: 250px;
+  height: 250px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+  transform: rotate(-90deg); /* Rotated to adjust clock hand direction */
+  border-radius: 100%; /* Make the clock circular */
+}
 
-		.time-12{
-			top:50%;
-			right:0%;
-			margin-top: -10px;
-		}
-		
-		.time-3{
-			bottom:0%;
-			left:50%;
-			margin-left: -4px;
-		}
-		.time-6{
-			top:50%;
-			left:0%;
-			margin-top: -8px;
-			margin-left: 4px;
-		}
+/* Common style for the numbers on the clock */
+.time {
+  color: #fff;
+  position: absolute;
+  transform: rotate(90deg); /* Rotate text to appear upright */
+  /* Margin for positioning is added in specific classes below */
+}
 
-		.time-9{
-			top:0%;
-			left:50%;
-			margin-left: -4px;
-		}
+/* Common style for all clock hands */
+.line {
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background: red;
+  top: calc(50% - 2.5px);  /* Vertically center the line */
+  left: calc(50% - 0px);   /* Horizontally start from the center */
+  transform-origin: 0% 50%; /* Rotate from the left center */
+  transform: rotate(90deg);
+}
+
+/* Center dot in the middle of the clock */
+.mid {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; /* Keep it on top */
+}
+
+/* Second hand styling */
+#seconds {
+  background: green;
+  transform: rotate(180deg); /* Initial position */
+}
+
+/* Minute hand styling */
+#minutes {
+  background: blue;
+  transform: rotate(270deg); /* Initial position */
+}
+
+/* Hour hand styling */
+#hours {
+  background: red;
+  transform: rotate(0deg); /* Start at 12 o'clock */
+}
+
+/* Positioning for clock numbers */
+.time-12 {
+  top: 50%;
+  right: 0%;
+  margin-top: -10px;
+}
+
+.time-3 {
+  bottom: 0%;
+  left: 50%;
+  margin-left: -4px;
+}
+
+.time-6 {
+  top: 50%;
+  left: 0%;
+  margin-top: -8px;
+  margin-left: 4px;
+}
+
+.time-9 {
+  top: 0%;
+  left: 50%;
+  margin-left: -4px;
+}
