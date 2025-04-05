@@ -1,41 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - simple javascript project || analog clock</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Js clock</title>
+  <meta charset="UTF-8">
+  <title>Analog Clock</title>
+
+  <!-- Linking external CSS for styling the clock -->
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	
-<center><h1>Simple javascript project || analog clock</h1></center>
-<div class="container">
-	<div class="clock">
-		<div class="time time-12">12</div>
-		<div class="time time-6">6</div>
-		<div class="time time-3">3</div>
-		<div class="time time-9">9</div>
 
-		<div class="mid"></div>
+  <!-- Project Heading -->
+  <center><h1>Analog Clock</h1></center>
 
-		<div class="line" id="hours"></div>
-		<div class="line" id="seconds"></div>
-		<div class="line" id="minutes"></div>
-	</div>
-</div>
+  <!-- Main container for the clock -->
+  <div class="container">
+    <div class="clock">
+      
+      <!-- Clock numbers -->
+      <div class="time time-12">12</div>
+      <div class="time time-6">6</div>
+      <div class="time time-3">3</div>
+      <div class="time time-9">9</div>
 
+      <!-- Center point of the clock -->
+      <div class="mid"></div>
 
+      <!-- Clock hands -->
+      <div class="line" id="hours"></div>     <!-- Hour hand -->
+      <div class="line" id="minutes"></div>   <!-- Minute hand -->
+      <div class="line" id="seconds"></div>   <!-- Second hand -->
 
-</body>
-</html>
-  <script  src="./script.js"></script>
+    </div>
+  </div>
+
+  <!-- Linking external JavaScript file for clock functionality -->
+  <script src="./script.js"></script>
 
 </body>
 </html>
